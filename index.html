@@ -31,7 +31,7 @@
     <!-- project script file -->
     <script src="./assets/script/index.js"></script>
 
-    <!-- font family stylesheet -->
+    <!-- font family style -->
     <style>
       .poppins {
         font-family: "Poppins", sans-serif;
@@ -43,5 +43,22 @@
       }
     </style>
   </head>
-  <body></body>
+  <body class="poppins">
+    <main
+      class="max-w-screen-2xl bg-[#010313] bg-[url('./assets/images/background.png')] bg-no-repeat bg-center min-h-screen"
+    >
+      <!-- home page -->
+      <section class="text-white flex justify-center items-center min-h-screen">
+        <div class="space-y-10 flex flex-col items-center">
+          <h1 class="anton text-9xl">ALPHABET CLASH</h1>
+          <p class="text-2xl font-medium">
+            Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+          </p>
+          <button class="btn bg-white text-[#010313] text-2xl font-bold">
+            Play Now
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
