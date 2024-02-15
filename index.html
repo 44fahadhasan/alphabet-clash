@@ -20,7 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- font family inter link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- daisyui and tailwind cdn link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -41,6 +47,10 @@
       .anton {
         font-family: "Anton", sans-serif;
       }
+
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
     </style>
   </head>
   <body class="poppins">
@@ -48,7 +58,9 @@
       class="max-w-screen-2xl bg-[#010313] bg-[url('./assets/images/background.png')] bg-no-repeat bg-center min-h-screen"
     >
       <!-- home page -->
-      <section class="text-white flex justify-center items-center min-h-screen">
+      <section
+        class="hidden text-white flex justify-center items-center min-h-screen"
+      >
         <div class="space-y-10 flex flex-col items-center">
           <h1 class="anton text-9xl">ALPHABET CLASH</h1>
           <p class="text-2xl font-medium">
@@ -56,6 +68,76 @@
           </p>
           <button class="btn bg-white text-[#010313] text-2xl font-bold">
             Play Now
+          </button>
+        </div>
+      </section>
+
+      <!-- play ground -->
+      <section class="text-white w-9/12 mx-auto pt-10">
+        <!-- display section -->
+        <div class="bg-[#FFFFFFB2] border-[20px] border-[#2F2941] rounded-xl">
+          <div class="flex justify-center">
+            <p class="font-medium text-lg bg-[#2F2941] p-3 rounded-b-xl">
+              Don't watch keyboard while playing...
+            </p>
+          </div>
+          <h1
+            class="text-[#010313] text-9xl font-semibold uppercase text-center my-8"
+          >
+            y
+          </h1>
+        </div>
+        <!-- keybord section -->
+        <div class="text-[#010313] text-lg font-medium mt-10">
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="inter kbd">q</kbd>
+            <kbd class="inter kbd">w</kbd>
+            <kbd class="inter kbd">e</kbd>
+            <kbd class="inter kbd">r</kbd>
+            <kbd class="inter kbd">t</kbd>
+            <kbd class="inter kbd bg-[#FFA500]">y</kbd>
+            <kbd class="inter kbd">u</kbd>
+            <kbd class="inter kbd">i</kbd>
+            <kbd class="inter kbd">o</kbd>
+            <kbd class="inter kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="inter kbd">a</kbd>
+            <kbd class="inter kbd">s</kbd>
+            <kbd class="inter kbd">d</kbd>
+            <kbd class="inter kbd">f</kbd>
+            <kbd class="inter kbd">g</kbd>
+            <kbd class="inter kbd">h</kbd>
+            <kbd class="inter kbd">j</kbd>
+            <kbd class="inter kbd">k</kbd>
+            <kbd class="inter kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="inter kbd">z</kbd>
+            <kbd class="inter kbd">x</kbd>
+            <kbd class="inter kbd">c</kbd>
+            <kbd class="inter kbd">v</kbd>
+            <kbd class="inter kbd">b</kbd>
+            <kbd class="inter kbd">n</kbd>
+            <kbd class="inter kbd">m</kbd>
+            <kbd class="inter kbd">/</kbd>
+          </div>
+        </div>
+        <!-- life and score button -->
+        <div class="flex justify-between inter mt-8">
+          <button
+            class="btn text-white font-medium text-lg bg-[#894189] hover:bg-[#894189] border-none rounded-full"
+          >
+            Life
+            <img src="./assets/icon/life.svg" alt="life" />
+            <span>1</span>
+          </button>
+          <button
+            class="btn text-white font-medium text-lg bg-[#360490] hover:bg-[#360490] border-none rounded-full"
+          >
+            Score
+            <img src="./assets/icon/dollar.svg" alt="life" />
+            <span>1</span>
           </button>
         </div>
       </section>
